@@ -1,0 +1,265 @@
+
+@font-face {
+    font-family: 'cera_proregular';
+    src: url('../Fonts/400/cerapro-regular-webfont.eot');
+    src: url('../Fonts/400/cerapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/400/cerapro-regular-webfont.woff2') format('woff2'),
+    url('../Fonts/400/cerapro-regular-webfont.woff') format('woff'),
+    url('../Fonts/400/cerapro-regular-webfont.ttf') format('truetype'),
+    url('../Fonts/400/cerapro-regular-webfont.svg#cera_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cera_promedium';
+    src: url('../Fonts/500/cerapro-medium-webfont.eot');
+    src: url('../Fonts/500/cerapro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/500/cerapro-medium-webfont.woff2') format('woff2'),
+    url('../Fonts/500/cerapro-medium-webfont.woff') format('woff'),
+    url('../Fonts/500/cerapro-medium-webfont.ttf') format('truetype'),
+    url('../Fonts/500/cerapro-medium-webfont.svg#cera_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cera_probold';
+    src: url('../Fonts/700/cerapro-bold-webfont.eot');
+    src: url('../Fonts/700/cerapro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/700/cerapro-bold-webfont.woff2') format('woff2'),
+    url('../Fonts/700/cerapro-bold-webfont.woff') format('woff'),
+    url('../Fonts/700/cerapro-bold-webfont.ttf') format('truetype'),
+    url('../Fonts/700/cerapro-bold-webfont.svg#cera_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cera_problack';
+    src: url('../Fonts/900/cerapro-black-webfont.eot');
+    src: url('../Fonts/900/cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/900/cerapro-black-webfont.woff2') format('woff2'),
+    url('../Fonts/900/cerapro-black-webfont.woff') format('woff'),
+    url('../Fonts/900/cerapro-black-webfont.ttf') format('truetype'),
+    url('../Fonts/900/cerapro-black-webfont.svg#cera_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+header .container{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 53px;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.5);
+    margin-bottom: 12px;
+}
+
+header ul, .logo, .login{
+    list-style: none;
+    text-decoration: none;
+
+}
+header nav li a{
+    font-family: 'cera_proregular', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #3d3d3d;
+    min-width: 76px;
+}
+header .logo{
+    display: inline-flex;
+    min-width: 150px;
+    height: 35px;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 6px;
+}
+header nav li:after{
+    height: 3px;
+    /*background-color: #46a358;*/
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    content: "";
+    margin-top: 22px;
+    transition: 0.3s;
+}
+header nav li:hover:after{
+    background-color: #46a358;
+}
+header .log{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 205px;
+}
+header .search{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+}
+header .basket{
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+}
+header .login{
+    font-family: 'cera_promedium', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 6px;
+    min-width: 100px;
+    height: 35px;
+    background: #46a358;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header .login img{
+    margin-right: 8px;
+}
+main .banner{
+    margin-bottom: 26px;
+    min-height: 470px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #f5f5f5 100%);
+}
+main .banner .container{
+    display: flex;
+    justify-content: space-between;
+}
+main .banner .container article{
+    margin-left: 40px;
+    min-height: 470px;
+    max-width: 557px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+main .banner .container img{
+    max-height: 450px;
+    max-width: 507px;
+    display: inline-flex;
+}
+main .banner .container article span{
+    color: #46a358;
+}
+main .banner .container h4{
+    font-family: 'cera_promedium', sans-serif;
+    margin-top: 68px;
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3d3d3d;
+}
+main .banner .container h1{
+    font-family: 'cera_problack', sans-serif;
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3d3d3d;
+}
+main .banner .container p{
+    font-family: 'cera_proregular', sans-serif;
+    margin-bottom: 44px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
+}
+main .banner .container a{
+    font-family: 'cera_probold', sans-serif;
+    background: #46a358;
+    border-radius: 6px;
+    width: 140px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 85px;
+}
+
+
+
+
+
+main .categories{
+    margin-bottom: 94px;
+    min-height: 1370px;
+}
+main .categories .container{
+    display: flex;
+    justify-content: space-between;
+}
+main .categories .left_container{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 310px;
+    min-height: 1370px;
+    background: #fbfbfb;
+}
+.categories .left_container article{
+    min-height: 360px;
+    max-width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+
+.categories .products{
+    min-height: 1370px;
+    max-width: 840px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #a5a5a5;
+}
+.categories .products .select{
+    margin-bottom: 30px;
+    height: 24px;
+    display: flex;
+
+    background-color: burlywood;
+}
+.categories .products .cards{
+    margin-bottom: 90px;
+    min-height: 1190px;
+    display: flex;
+
+
+    background-color: burlywood;
+}
+.categories .products .pages{
+    height: 36px;
+    display: flex;
+
+
+    background-color: burlywood;
+}

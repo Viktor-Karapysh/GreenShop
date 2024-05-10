@@ -5,69 +5,36 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register form</title>
+    <link rel="stylesheet" href="css/reg_form.css">
+        <title>Register form</title>
 </head>
 <body>
-<div style="max-width: 500px; border-bottom: #46a358 10px solid;  margin: auto; padding: 52px 100px 50px; box-sizing: border-box;">
-    <div style="margin: 0 0 40px; text-align: center">
-        <span style="font-weight: 500; font-size: 20px; line-height: 80%; color: #3d3d3d; border-right: solid gray 1px; padding-right: 10px">Register</span>
-        <span style="font-weight: 500; font-size: 20px; line-height: 80%; color: #46a358; padding-left: 10px">Login</span>
+<div class="container">
+    <div id="text_login">
+        <span>Register</span>
+        <span>Login</span>
     </div>
-    <div style="text-align: center; margin: 0 0 14px">
-            <p style="font-weight: 400; font-size: 13px; line-height: 123%; color: #3d3d3d;">Enter your email and password to register</p>
-    </div>
-        <form name="login" action="#" method="post">
-            <div style="margin: 0 0 16px">
-                <label>
-                    <input type="text" name="first_name" placeholder="User name" id="first_name" style="font-weight: 400; font-size: 14px; line-height: 114%;
-                    color: #a5a5a5; padding: 12px 14px; border: 1px solid #eaeaea;
-                    border-radius: 5px; width: 100%; height: 40px; box-sizing: border-box;">
-                </label>
-            </div>
-            <div style="margin: 0 0 16px">
-                <label>
-                    <input type="text" name="mail_address" placeholder="Enter your mail address" id="mail_address" style="font-weight: 400;
-                    font-size: 14px; line-height: 114%;
-                color: #a5a5a5; padding: 12px 14px; border: 1px solid #eaeaea;
-                border-radius: 5px; width: 100%; height: 40px; box-sizing: border-box;">
-                </label>
-            </div>
-            <div style="margin: 0 0 16px">
-                <label>
-                    <input type="text" name="password" placeholder="Password" id="password" style="font-weight: 400;
-                    font-size: 14px; line-height: 114%;
-                color: #a5a5a5; padding: 12px 14px; border: 1px solid #eaeaea;
-                border-radius: 5px; width: 100%; height: 40px; box-sizing: border-box;">
-                </label>
-            </div>
-            <div style="margin: 0 0 41px">
-                <label>
-                    <input type="text" name="confirm_password" placeholder="Confirm_password" id="confirm_password" style="font-weight: 400;
-                    font-size: 14px; line-height: 114%;
-                color: #a5a5a5; padding: 12px 14px; border: 1px solid #eaeaea;
-                border-radius: 5px; width: 100%; height: 40px; box-sizing: border-box; margin: 0 0 16px">
-                </label>
-            </div>
-            <div style="margin: 0 0 36px">
-                <button style="border-radius: 5px; width: 300px; height: 45px; background: #46a358;
-                    font-size: 16px; line-height: 100%; color: #fff;">Register
-                </button>
-            </div>
-        </form>
-            <div style="text-align: center; margin: 0 0 27px">
-                <p style="font-weight: 400; font-size: 13px; line-height: 123%; color: #3d3d3d;">Or register with</p>
-            </div>
+    <p class="text">Enter your email and password to register</p>
+    <form action="#" method="post">
+        <input type="text" name="User name" placeholder="User name" autocomplete="off">
+        <input type="text" name="email" placeholder="Enter your mail address" autocomplete="off">
+        <input type="text" name="password" placeholder="Password" autocomplete="off">
+        <input type="text" name="confirm password" placeholder="Confirm password" autocomplete="off">
+        <button style="border-radius: 5px; width: 300px; height: 45px; background: #46a358;
+                    font-size: 16px; line-height: 100%; color: #fff; margin-bottom: 26px;">Register</button>
+    </form>
+        <p class="text lost">Or register with</p>
 
-                <a href="https://www.google.com/" style="display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 0 15px; border: 1px solid #eaeaea; border-radius: 5px;
-                width: 300px; height: 40px; padding: 10px 10px; box-sizing: border-box; font-weight: 500; font-size: 13px; line-height: 123%; color: #727272;"
-                    title="Google" target="_blank">
-                    <img style="margin: 0 9px" src="images/google%201.svg" alt="#">
+    <a href="https://www.google.com/" title="Google" target="blank">
+
+       <img style="margin-right: 9px" src="images/google%201.svg" alt="#">
+
                     Continue with Google</a>
 
-                <a href="https://www.facebook.com/" style="display: flex; justify-content: center; align-items: center; text-align: center; ; border: 1px solid #eaeaea; border-radius: 5px; margin: 0 0 15px;
-                width: 300px; height: 40px; padding: 10px 10px; box-sizing: border-box; font-weight: 500; font-size: 13px; line-height: 123%; color: #727272;"
-                    title="facebook" target="_blank">
-                    <img style="margin: 0 9px" src="images/facebook%201.svg" alt="#">
+    <a href="https://www.facebook.com/" title="facebook" target="blank">
+
+        <img style="margin-right: 9px" src="images/facebook%201.svg" alt="#">
+
                     Continue with Facebook</a>
 
 </div>
