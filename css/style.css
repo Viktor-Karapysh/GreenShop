@@ -205,8 +205,6 @@ main .banner .container a{
 
 
 
-
-
 main .categories{
     margin-bottom: 94px;
     min-height: 1370px;
@@ -216,34 +214,81 @@ main .categories .container{
     justify-content: space-between;
 }
 main .categories .left_container{
+    margin-right: 48px;
     display: flex;
     flex-direction: column;
-
+    justify-content: flex-start;
     max-width: 310px;
     min-height: 1370px;
     background: #fbfbfb;
 }
-.categories .left_container article{
+.left_container h2{
+    font-family: 'cera_probold', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    display: inline-block;
+}
+.left_container h2:first-of-type{
+    margin-top: 14px;
+    margin-left: 18px;
+    margin-bottom: 7px;
+
+}
+.link_list{
+    margin-left: 30px;
+    margin-bottom: 36px;
     min-height: 360px;
-    max-width: 310px;
+    min-width: 92px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+}
+.link_list ul{
+        list-style: none;
+    text-decoration: none;
+}
+
+.link_list a{
+    font-family: 'cera_proregular', sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 267%;
+    color: #3d3d3d;
+}
+.link_list a:hover:after{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 267%;
+    color: #46a358;
+}
+
+.left_container h2:last-of-type{
 
 }
 
+.link_list img{
+    display: inline-block;
+}
+.numbers{
+    min-height: 360px;
+    width: 28px;
+    display: flex;
+}
 
 .categories .products{
     min-height: 1370px;
     max-width: 840px;
     display: flex;
     flex-direction: column;
+    align-content: space-between;
 
     background-color: #a5a5a5;
 }
 .categories .products .select{
     margin-bottom: 30px;
     height: 24px;
+    max-width: 840px;
     display: flex;
 
     background-color: burlywood;
@@ -251,6 +296,7 @@ main .categories .left_container{
 .categories .products .cards{
     margin-bottom: 90px;
     min-height: 1190px;
+    max-width: 840px;
     display: flex;
 
 
@@ -258,8 +304,11 @@ main .categories .left_container{
 }
 .categories .products .pages{
     height: 36px;
+    max-width: 840px;
     display: flex;
 
 
     background-color: burlywood;
 }
+
+
